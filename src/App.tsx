@@ -43,7 +43,7 @@ function Main() {
       image: nfts[0].media,
       name: nfts[0].metadata?.title
     };
-    const dcResponse = await fetcht("http://localhost:9090/", {
+    const dcResponse = await fetcht("https://verifybot.tyreebuck.repl.co", {
       method: "post",
       body: JSON.stringify(body),
       headers: { "Content-Type": "application/json" },
